@@ -10,7 +10,7 @@ Welcome to the Modal Management Project, a simple and clean web interface to man
 
 ---
 
-🚀 Features
+# 🚀 Features
 
 Dynamic Modals: Open modals dynamically based on button clicks.
 
@@ -24,14 +24,14 @@ Easy to Extend: Add more modal types with minimal changes.
 
 ---
 
-🎯 Project Overview
+# 🎯 Project Overview
 
 This project demonstrates a modular approach to handling multiple modal dialogs using JavaScript. Each modal is controlled through a centralized function, making the code scalable and easy to maintain.
 
 
 ---
 
-🖥️ Demo Screenshots
+# 🖥️ Demo Screenshots
 
 Main Interface
 
@@ -44,7 +44,7 @@ Modal Example
 
 ---
 
-⚙️ How to Use
+# ⚙️ How to Use
 
 1. Open the index.html file in your browser.
 
@@ -62,7 +62,7 @@ Modal Example
 
 ---
 
-🧩 How It Works
+# 🧩 How It Works
 
 Buttons are linked to the showModal(type) function.
 
@@ -76,12 +76,12 @@ Modals can be easily added or removed by editing the HTML and JavaScript.
 
 ---
 
-🛠️ Installation & Setup
+# 🛠️ Installation & Setup
 
 No installation required. Just clone or download the repository and open index.html in your browser.
 
-git clone https://github.com/yourusername/modal-management-project.git
-cd modal-management-project
+git clone https://github.com/Obiorachibuike/Html_User_Dashboard.git
+cd Html_User_Dashboard.git
 open index.html
 
 
