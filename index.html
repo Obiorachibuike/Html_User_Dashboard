@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Personal Dashboard</title>
+  <link rel="stylesheet" href="/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
+  <style>
+ 
+  </style>
+</head>
+<body>
+
+  <!-- Hamburger for mobile -->
+  <div class="hamburger" id="hamburgerBtn" aria-label="Toggle menu" role="button" tabindex="0">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <!-- Sidebar -->
+  <aside class="sidebar" id="sidebar" role="navigation" aria-label="Main sidebar navigation">
+    <h2>Dashboard</h2>
+    <nav>
+      <ul>
+        <li class="active" tabindex="0" aria-current="page">
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M3 12h18M3 6h18M3 18h18"/></svg> Home
+        </li>
+        <li tabindex="0">
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1-12 0"/></svg> Academics
+        </li>
+        <li tabindex="0">
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="7" r="4"/><path d="M5.5 21a8.38 8.38 0 0 1 13 0"/></svg> Skills
+        </li>
+        <li tabindex="0">
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/></svg> Extras
+        </li>
+        <li tabindex="0">
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M4 4h16v16H4z"/></svg> Certificates
+        </li>
+      </ul>
+    </nav>
+  </aside>
+
+  <!-- Main content -->
+  <main>
+    <article class="profile-card" aria-label="User Profile">
+    
+      
+      <img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e" 
+     alt="Profile" 
+     style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover;" />
+      
+      <h1>Your Name</h1>
+      <p>Web Developer passionate about clean code and elegant UI</p>
+      <p>youremail@example.com</p>
+    </article>
+
+    <!-- Academics -->
+    <section aria-labelledby="academicsTitle">
+      <div class="section-header">
+        <h2 id="academicsTitle">Academics / Experience</h2>
+        <button class="btn-add" id="btnAddAcademic">Add</button>
+      </div>
+      <div id="academicsList" class="list"></div>
+    </section>
+
+    <!-- Skills -->
+    <section aria-labelledby="skillsTitle">
+      <div class="section-header">
+        <h2 id="skillsTitle">Skills</h2>
+        <button class="btn-add" id="btnAddSkill">Add</button>
+      </div>
+      <div id="skillsContainer" class="skills-container"></div>
+    </section>
+
+    <!-- Extras -->
+    <section aria-labelledby="extrasTitle">
+      <div class="section-header">
+        <h2 id="extrasTitle">Extras</h2>
+        <button class="btn-add" id="btnAddExtra">Add</button>
+      </div>
+      <div id="extrasList" class="list"></div>
+    </section>
+
+    <!-- Certificates -->
+    <section aria-labelledby="certsTitle">
+      <div class="section-header">
+        <h2 id="certsTitle">Certificates</h2>
+        <button class="btn-add" id="btnAddCert">Add</button>
+      </div>
+      <div id="certList" class="list"></div>
+    </section>
+  </main>
+
+  <!-- Modals -->
+  <div class="modal-overlay" id="modalOverlay" tabindex="-1" aria-hidden="true">
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="btn-close" id="modalCloseBtn" aria-label="Close modal">&times;</button>
+
+      <!-- Dynamic modal content will be injected here -->
+      <div id="modalContent"></div>
+    </div>
+  </div>
+
+  <script src="script.js">
+ 
+  </script>
+
+</body>
+</html>
